@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* common */
+.hide {font-size: 0; line-height: 0; width: 0; height: 0; overflow: hidden; visibility: hidden; opacity: 0; text-indent: -999999em;}
+html, body {font-family: "나눔고딕", sans-serif;}
+
+#about > div, #skill > div, #work > div, #contact > div {width: 1315px; margin: 0 auto;}
+main > section h3 {padding: 88px 0 55px; text-align: center; font-size: 40px; color: #333;}
+
+#about > div figure > figcaption dt, #skill figcaption dt, #work > div > p, #contact > div > div .info dt {font-size: 26px; line-height:1.2; margin-bottom: 35px; color: #4b4b4b; text-transform: uppercase;}
+#about > div figure > figcaption dd, #skill figcaption dd, #work > div > p span, #contact > div > div .info dd {line-height: 1.7; color: #4b4b4b; text-align: justify;}
+
+/************
+  header
+*************/
+header {background-color: #242424; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;}
+header > div {position: relative;}
+
+header h1 {position: absolute; top: 50%; transform: translateY(-50%); left: 10%;}
+header h1 a {display: block; font-size: 30px; color: #fff; font-weight: bold;}
+
+header nav ul {display: flex; justify-content: flex-end; align-items: center; margin-right: 8%;}
+header nav ul li {margin: 0 20px;}
+header nav ul a {display: block; font-size: 17px; color: #fff; font-weight: bold; line-height: 4.117647; text-transform: uppercase; position: relative;}
+header nav ul a:after {content:""; display: block; width: 100%; height: 2px; background-color: #fff; position: absolute; bottom: 12px; left: 0; transform: scaleX(0); transition: all .25s; overflow: hidden;}
+header nav ul a:hover:after {transform: scaleX(1);}
+
+header .btnNav {display: none;}
+
+/************
+  main
+*************/
+
+/* mainSlider */
+#mainSlider {position: relative; height: 100vh;}
+#mainSlider h3 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 70px; font-weight:lighter; line-height: 1.6; text-align: center; padding: 25px 65px; border: 1px solid #fff; color: #fff; font-family: 'Raleway', sans-serif; letter-spacing: -.02em; z-index: 10;}
+#mainSlider #gallery {width: 100%; height: 100%; overflow: hidden;}
+#mainSlider #slider {height: 100%;}
+#mainSlider #slider li {height: 100%; background:url("../images/green.jpg") no-repeat center; text-indent: -99999em;}
+#mainSlider #slider .slide01 {background-image: url("../images/green.jpg")}
+#mainSlider #slider .slide02 {background-image: url("../images/pink.jpg")}
+#mainSlider #slider .slide03 {background-image: url("../images/purple.jpg")}
+#mainSlider #slider .slide04 {background-image: url("../images/blue.jpg")}
+
+#mainSlider #gallery  .swiper-horizontal>.swiper-pagination-bullets,
+#mainSlider #gallery  .swiper-pagination-bullets.swiper-pagination-horizontal,
+#mainSlider #gallery  .swiper-pagination-custom,
+#mainSlider #gallery .swiper-pagination-fraction {left: auto; width: auto; right: 14.0625%; bottom: 50px;}
+
+#mainSlider #gallery .swiper-pagination .swiper-pagination-bullet {width: 24px; height: 24px; background-color: #fff; opacity: 1; transition: all .2s; margin: 0 8px;}
+#mainSlider #gallery .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {width: 60px; border-radius: 15px; }
+
+/* about */
+#about {background-color: #e8e8e8;}
+#about > div {box-sizing: border-box; padding: 0 110px 80px;}
+#about > div figure {display: flex; justify-content: space-between; align-items: flex-start;}
+#about > div figure > div {width: 390px;}
+#about > div figure > figcaption {width: 640px; overflow: hidden;}
+#about > div figure > figcaption dt {font-size: 26px; line-height:1.2; margin-bottom: 35px; color: #4b4b4b; text-transform: uppercase;}
+#about > div figure > figcaption dd p:last-child {width: 200px; text-align: right; line-height: 50px; color: #fff; text-align: center; background-color: #9c9491; border-radius: 25px; float: right; margin-top: 50px;}
+
+/* skill */
+#skill {padding-bottom: 80px;}
+#skill figure {display: flex; justify-content: space-between; flex-direction: row-reverse;}
+#skill figure > div {width: 576px; display: flex; justify-content: flex-start; flex-wrap: wrap;}
+#skill figure > div > div {width: 80px; height: 80px; margin: 8px; box-sizing: border-box; border: 1px solid #cac6c4; border-radius: 2px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+#skill figcaption {width: 520px;}
+
+/* work */
+#work {background-color: #c3c3c3; padding-bottom: 30px;}
+#work h3 {color: #fff;}
+#work > div > p {color: #fff; text-align: center;}
+#work > div > p span {color: #fff; font-size: 16px; display: block; text-align: center; margin-top: 10px;}
+
+#work > div > ul {display: flex; justify-content: center; font-size: 18px; margin-bottom: 38px;} 
+#work > div > ul li {padding: 0 20px; border-left: 2px solid #fff;}
+#work > div > ul li:first-child {border-left: 0 none;}
+#work > div > ul li a {font-size: 18px; color: #fff;}
+
+#work #gallery #all {display: flex; flex-wrap: wrap; justify-content: space-between;}
+#work #gallery figure {width: 410px; margin-bottom: 55px;}
+#work #gallery figure img {margin-bottom: 26px; border-radius: 5px;}
+#work #gallery figure figcaption {text-align: center; color: #fff;}
+
+/* contact */
+#contact {background-color: #9c9491; box-sizing: border-box; padding: 0 110px 90px;}
+#contact h3 {color: #fff;}
+#contact > div > div {display: flex; justify-content: space-between;}
+
+#contact > div > div .info {width: 455px;}
+#contact > div > div .info dt, #contact > div > div .info dd {color: #fff;}
+#contact > div > div .info dt {margin-bottom: 10px;}
+
+#contact > div > div .info .detail {padding-top: 10px;}
+#contact > div > div .info .detail dt, #contact > div > div .info .detail dd {padding-left: 42px; line-height: 1.625; font-size: 16px;}
+#contact > div > div .info .detail dt {margin: 30px 0 0;}
+#contact > div > div .info .detail dl dt {background: url("../images/contact_icon_01.png") no-repeat top 2px left; background-size: 24px;}
+#contact > div > div .info .detail dl:nth-child(2) dt {background-image: url("../images/contact_icon_03.png");}
+#contact > div > div .info .detail dl:nth-child(3) dt {background-image: url("../images/contact_icon_02.png");}
+
+#contact > div > div .form {margin-right: 55px; width: 448px; background-color: #fff; box-sizing: border-box; padding: 16px 20px;}
+#contact > div > div .form li {margin-bottom: 10px;}
+#contact > div > div .form label {display: block; font-size: 14px; color: #717171; line-height: 2.71428; font-weight: bold;}
+#contact > div > div .form input, #contact > div > div .form textarea {width: 100%; box-sizing: border-box; padding: 0; background-color: #eae4e4; line-height: 43px; padding-left: 10px; border: 0 none; border-radius: 5px;}
+#contact > div > div .form textarea {padding: 10px; height: 120px; line-height: 1.5;}
+#contact > div > div .form input[type=submit] {color: #717171; cursor: pointer; font-weight: bold;}
+
+/************
+  aside
+*************/
+#top {position: fixed; right: 20px; bottom: 20px; overflow: hidden; cursor: pointer; z-index: 100;}
+#top p {width: 32px; height: 32px; background-color: #e38545; position: relative; text-indent: -99999em;}
+#top p:before, #top p:after {content:""; display: block; position: absolute; height: 2px; width: 10px; border-radius: 5px; background-color: #fff; top: 50%;}
+#top p:before {transform: translateY(-50%) rotate(-45deg); left: 8px;}
+#top p:after {transform: translateY(-50%) rotate(45deg); left: 14px;}
+
+#submenu {position: fixed; right: 40px; top: 50%; transform: translateY(-50%); z-index: 100;}
+#submenu li {margin: 8px 0; position: relative;}
+#submenu li a {display: block; width: 18px; height: 18px; background-color: #000; border-radius: 50%; text-indent: -99999em;}
+#submenu li a:after {content: "home"; display: block; position: absolute; padding: 0 5px; color: #000; top: 50%; transform: translateY(-50%); right: 120%; opacity: 0; transition: all .2s; text-indent: 0;}
+#submenu li:nth-child(2) a:after {content:"About";}
+#submenu li:nth-child(3) a:after {content:"Skill";}
+#submenu li:nth-child(4) a:after {content:"Work";}
+#submenu li:nth-child(5) a:after {content:"Contact";}
+
+#submenu li:hover a:after {opacity: 1; }
+
+/************
+  footer
+*************/
+
+footer {background-color: #333; text-align: center; padding: 40px 0;}
+footer small {color: #fff; font-size: 14px;}

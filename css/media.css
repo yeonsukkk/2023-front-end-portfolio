@@ -1,0 +1,168 @@
+@charset "UFT-8";
+/* CSS Document */
+
+@media all and (min-width: 1335px){
+    /* 1315px */
+    /************
+        main
+    *************/
+    /* about */
+    #about > div, #skill > div, #work > div, #contact > div {width: 1315px;}
+    #about > div {padding: 0 110px 80px;}
+    #about > div figure > div {width: 390px;}
+    #about > div figure > div img {max-width: auto;}
+    #about > div figure > figcaption {width: 640px;}
+
+    /* contact */
+    #contact > div {padding: 0 110px 90px;}
+    #contact > div > div .info {width: 455px;}
+    #contact > div > div .form {margin-right: 55px; width: 448px;}
+    
+    
+    /************
+        aside
+    *************/
+    #submenu, #top {display: block;}
+
+    /************
+        modal
+    *************/
+    #modalWrap .cntWrap {width: 1080px;}
+}
+
+@media all and (max-width: 980px) {
+
+    /* common */
+    main > section h3 {font-size: 35px; padding: 40px 0;}
+    #about > div figure > figcaption dt, #skill figcaption dt, #work > div > p, #contact > div > div .info dt {text-align: center; font-size: 23px; margin: 0 auto 30px;}
+    #about > div figure > figcaption dd, #skill figcaption dd, #work > div > p span, #contact > div > div .info dd {font-size: 14px;}
+    /************
+        header
+    *************/
+    header {position: fixed; padding: 25px 0; background-color: rgb(66,66,66,.5);}
+    header h1 {position: static; font-size: 35px; text-align: center; transform: translateY(0);}
+
+    /* nav */
+    header nav {display: block; position: fixed; top: 0; left: -100%; width: 390px; height: 100vh; background-color: rgba(0,0,0,0.8); z-index:1000;}
+    header nav ul {display: block; width: 90%; margin: 0 auto; padding-top: 27.5vh; box-sizing: border-box;}
+    header nav ul li {border-bottom: 1px solid #fff;}
+    header nav ul li:first-child {border-top: 1px solid #fff;}
+    header nav ul a {line-height: 7.5vh; font-size: 20px; text-align: center;}
+
+    header nav .btnNavClose {display: block; position: absolute; width: 35px; height: 35px; top: 2.5vh; right: 3%; cursor: pointer;}
+    header nav .btnNavClose span {display: block; width: 100%; height: 2px; background-color: #fff; position: absolute; top: 50%; transform: translateY(-50%);}
+    header nav .btnNavClose span:first-child {transform: rotate(45deg);}
+    header nav .btnNavClose span:last-child {transform: rotate(-45deg);}
+
+    header nav ul a:after {display: none;}
+
+    /* btnNav */
+    header .btnNav {display: flex; flex-direction: column; justify-content: space-between; text-indent: -99999em; width: 35px; height: 25px; position: absolute; top: 50%; right: 4.8%; transform: translateY(-50%); cursor: pointer;}
+    header .btnNav span {display: block; height: 2px; background-color: #fff;}
+
+    /************
+        main
+    *************/
+    /* mainSlider */
+    #mainSlider h3 {width: 100%; font-size: 74px;}
+    #mainSlider #gallery .swiper-pagination {display: none;}
+
+    /* about */
+    main > #about h3 {padding: 65px 0 52px;}
+    #about > div {padding-bottom: 65px;}
+    #about > div figure {display: block;}
+    #about > div figure > div {width: 39.96vw; margin: 0 auto;}
+    #about > div figure > figcaption {width: 90.01vw; margin: 0 auto;}
+    #about > div figure > figcaption dd p:last-child {width: 19.8vw; font-size: 15px;}
+
+    /* skill */
+    #skill {padding-bottom: 65px;}
+    #skill figure {flex-direction: column-reverse;}
+    #skill figure > div {width: 63.27vw; margin: 50px auto 0;}
+    #skill figure > div > div {width: 8.325vw; height: 8.325vw; margin: 1.11vw;}
+    #skill figure > div > div img {max-width: auto;}
+
+    #skill figcaption {width: 90.01vw; margin: 0 auto;}
+
+    /* work */
+    #work {padding-bottom: 65px;}
+    #work > div {width: 100%;}
+    #work > div > p {width: 90.01vw; margin: 0 auto;}
+    #work > div > p span {text-align: left;}
+
+    #work > div > ul {margin: 53px 0;}
+
+    #work #listWrap {position: relative;}
+
+    #work #show {width: 90%/* 79.92vw */; margin: 0 auto;}
+    #work #show .all figure {width: 48%/* 37.965vw */; padding: 3vw; margin: 0 0.6666666666666667% 55px;}
+    #work #listWrap figure figcaption dd a {padding: 1vw;}
+
+
+    /* contact */
+    #contact > div {padding: 0 0 80px;}
+    #contact > div > div {display: block;}
+    #contact > div > div .info .detail {display: none;}
+    #contact > div > div .info, #contact > div > div .form {width: 80.02vw; margin: 0 auto;}
+    #contact > div > div .info dt {margin: 0;}
+    #contact > div > div .info dd p {margin-top: 10px;}
+    #contact > div > div .form {margin-top: 33px;}
+
+}
+
+@media all and (max-width: 870px) { /* modal */
+    #modalWrap .cntWrap {height: 80.02vh; position: relative; padding: 3% 5%;}
+    #modalWrap .cntWrap > div {display: block;}
+    #modalWrap .cntWrap h4 {margin-bottom: 3.33vh;}
+    #modalWrap .cntWrap figure {width: 39.96vw; margin: 0 auto;}
+
+    #modalWrap .cntWrap ul {width: 95%; position: absolute; left: 50%; transform: translateX(-50%); bottom:1.11vh;}
+    #modalWrap .cntWrap li {padding-bottom: 1.11vh;}
+    #modalWrap .cntWrap li dt, #modalWrap .cntWrap li dd {float: none;}
+    #modalWrap .cntWrap li dt {margin-bottom: 2px; font-size: 14px; font-weight: bold;}
+    
+}
+
+@media all and (max-width: 768px) {
+    /* mainSlider */
+    #mainSlider h3 {font-size: 7vw;}
+    #mainSlider h3 span {font-size: 6.6vw;}
+
+    #work #show .all figure {width: 100%; padding: 6vw;}
+}
+
+@media all and (max-width: 580px) {
+    header {padding: 15px 0;}
+    header nav {width: 100%;}
+
+    /* common */
+    main > section h3 {font-size: 27px; padding: 48px 0 34px;}
+    #about > div figure > figcaption dt, #skill figcaption dt, #work > div > p, #contact > div > div .info dt {font-size: 24px; margin: 0 auto 20px;}
+    #about > div figure > figcaption dd, #skill figcaption dd, #work > div > p span, #contact > div > div .info dd {font-size: 15px;}
+
+
+    /************
+        main
+    *************/
+
+    /* about */
+    #about > div {padding-bottom: 35px;}
+    #about > div figure > div {width: 49.95vw;}
+
+    #about > div figure > figcaption dd p:last-child {float :none; margin: 35px auto 0; width: 33.3vw; line-height: 3.6666666; border-radius: 33px;}
+
+    /* skill */
+    #skill {padding-bottom: 30px;}
+    #skill figure > div {width: 86.68vw; margin: 20px auto 0;}
+    #skill figure > div > div {margin: 1.665vw; width: 14.006vw; height: 14.006vw;}
+
+    /* work */
+    #work > div > p span {margin-top: 30px;}
+    #work #show {width: 86.58vw;}
+    #work #show .all {margin: 0 auto;}
+
+    /* contact */
+    #contact > div {padding-bottom: 35px;}
+    #work > div > p span {margin-top: 30px;}
+    #contact > div > div .info, #contact > div > div .form {width: 90.01vw;}
+}

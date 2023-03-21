@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* common */
+.hide {font-size: 0; line-height: 0; width: 0; height: 0; overflow: hidden; visibility: hidden; opacity: 0; text-indent: -999999em;}
+html, body {font-family: "나눔고딕", sans-serif;}
+
+#about > div, #skill > div, #work > div, #contact > div {width: 98% /* 1315px */; margin: 0 auto;}
+main > section h3 {padding: 88px 0 55px; text-align: center; font-size: 40px; color: #333;}
+
+#about > div figure > figcaption dt, #skill figcaption dt, #work > div > p, #contact > div > div .info dt {font-size: 26px; line-height:1.2; margin-bottom: 35px; color: #4b4b4b; text-transform: uppercase;}
+#about > div figure > figcaption dd, #skill figcaption dd, #work > div > p span, #contact > div > div .info dd {line-height: 1.7; color: #4b4b4b; text-align: justify;}
+
+/************
+  header
+*************/
+header {background-color: transparent; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.4); transition: all .3s;}
+header.on {background-color: rgba(0,0,0,0.5)}
+header > div {position: relative;}
+
+header h1 {position: absolute; top: 50%; transform: translateY(-50%); left: 10%;}
+header h1 a {font-size: 26px; color: #fff; font-weight: 500;}
+
+header nav .btnNavClose {display: none;}
+header nav ul {display: flex; justify-content: flex-end; align-items: center; margin-right: 8%;}
+header nav ul li {margin: 0 20px;}
+header nav ul a {display: block; font-size: 17px; color: #fff; font-weight: bold; line-height: 4.117647; text-transform: uppercase; position: relative;}
+header nav ul a:after {content:""; display: block; width: 100%; height: 3px; border-radius: 3px; background-color: #fff; /* background-image: linear-gradient(90deg,#E6A042 0%,#E7BABB 50%,#8296D6 100%); */ position: absolute; bottom: 12px; left: 0; transform: scaleX(0); transition: all .25s; overflow: hidden; transform-origin: left center;}
+header nav ul a:hover:after {transform: scaleX(1);}
+
+header .btnNav {display: none;}
+
+/************
+  main
+*************/
+main {background-color: #eee;}
+
+/* mainSlider */
+#mainSlider {position: relative; height: 100vh; overflow: hidden; border-radius: 0 0 10vw 10vw;}
+#mainSlider h3 {width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 70px; font-weight:lighter; line-height: 1.2; text-align: center; color: #fff; font-family: 'Raleway', sans-serif; letter-spacing: -.02em; z-index: 10; text-shadow: 3px 3px 0 #f4a460;}
+#mainSlider h3 span {font-size: 50px;}
+#mainSlider #gallery {width: 100%; height: 100%; overflow: hidden;}
+#mainSlider #slider {height: 100%;}
+#mainSlider #slider li {height: 100%; background:url("../images/mainSlide_illu_01.jpg") no-repeat center; background-size: cover; text-indent: -99999em;}
+#mainSlider #slider .slide02 {background-image: url("../images/mainSlide_illu_02.png")}
+#mainSlider #slider .slide03 {background-image: url("../images/mainSlide_illu_03.png")}
+#mainSlider #slider .slide04 {background-image: url("../images/mainSlide_illu_04.png")}
+
+#mainSlider #gallery  .swiper-horizontal>.swiper-pagination-bullets,
+#mainSlider #gallery  .swiper-pagination-bullets.swiper-pagination-horizontal,
+#mainSlider #gallery  .swiper-pagination-custom,
+#mainSlider #gallery .swiper-pagination-fraction {left: auto; width: auto; right: 14.0625%; bottom: 35px;}
+
+#mainSlider #gallery .swiper-pagination .swiper-pagination-bullet {width: 20px; height: 20px; background-color: #fff; opacity: 1; transition: all .45s; margin: 0 5px; box-sizing: border-box; border: 2px solid #fff;}
+#mainSlider #gallery .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {width: 46px; border-radius: 15px;  background-color: transparent;}
+
+/* about */
+#about {background-color: #eee;}
+#about > div {box-sizing: border-box; padding: 0 0 80px;/* 0 110px 80px */;}
+#about > div figure {display: flex; justify-content: space-between; align-items: flex-start;}
+#about > div figure > div {width: 38.0228136%/* 390px + 110px -> #about > div padding left값 */;}
+#about > div figure > figcaption {width: 57.0342205% /*  640px + 110px */; overflow: hidden;}
+#about > div figure > figcaption dt {font-size: 26px; line-height:1.2; margin-bottom: 35px; color: #4b4b4b; text-transform: uppercase;}
+#about > div figure > figcaption dd p:last-child {width: 200px; text-align: right; line-height: 3.125; color: #fff; text-align: center; background-color: #afafaf; border-radius: 25px; float: right; margin-top: 50px;}
+
+/* skill */
+#skill {padding-bottom: 80px; background-color: #fff;}
+#skill figure {display: flex; justify-content: space-between; flex-direction: row-reverse; flex-wrap: wrap;}
+#skill figure > div {width: 43.80228136%/* 576px */; display: flex; justify-content: flex-start; flex-wrap: wrap;}
+#skill figure > div > div {width: 80px; height: 80px; margin: 8px; box-sizing: border-box; border: 1px solid #cac6c4; border-radius: 10px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+#skill figcaption {width: 39.5437262%/* 520px */;}
+
+/* work */
+#work {background-color: #BDBDBD; padding-bottom: 30px;}
+#work h3 {color: #fff;}
+#work > div > p {color: #fff; text-align: center;}
+#work > div > p span {color: #fff; font-size: 16px; display: block; text-align: center; margin-top: 10px;}
+
+#work > div > ul {display: flex; justify-content: center; font-size: 18px; margin-bottom: 38px;} 
+#work > div > ul li {padding: 0 20px; border-left: 2px solid #fff;}
+#work > div > ul li:first-child {border-left: 0 none;}
+#work > div > ul li a {font-size: 18px; color: #fff;}
+
+#work #listWrap .all {display: none; flex-wrap: wrap;}
+#work #listWrap .all:nth-child(1){display: flex;}
+#work #listWrap figure {width: 32%/* 31.1787072%410px */; margin-bottom: 55px; box-sizing: border-box; text-align: center; padding: 30px; background-color: #eee; border-radius: 10px; transition: all .25s; margin: 0 0.6666666666666667% 55px;}
+#work #listWrap figure:hover {box-shadow: 10px 10px 15px rgba(0,0,0,0.2);}
+#work #listWrap figure img {margin-bottom: 20px; border-radius: 5px; width: 100%;}
+#work #listWrap figure figcaption {text-align: center;}
+#work #listWrap figure figcaption dt {margin-bottom: 10px;}
+#work #listWrap figure figcaption dt a {color: #333; position: relative; padding: 0 7px;}
+#work #listWrap figure figcaption dt a span {font-size: 12px; vertical-align: bottom;}
+#work #listWrap figure figcaption dt a:after {content:""; display: block; position: absolute; width: 100%; height: 0; background-color: #fff; opacity: .6; left: 0; bottom: 0; transition: all .25s; overflow: hidden;}
+#work #listWrap figure figcaption dt a:hover:after {height: 7px;}
+#work #listWrap figure figcaption dd {font-size: 14px;}
+#work #listWrap figure figcaption dd a {display: inline-block; vertical-align: top; border: 1px solid #ccc; background-color: #fff; color: #333; border-radius: 4px; padding: 6px 12px; }
+#work #listWrap figure figcaption dd a:hover {color: #333; background-color: #e6e6e6; border-color: #adadad;}
+
+/* contact */
+#contact {background-color: #757575; box-sizing: border-box; }
+#contact h3 {color: #fff;}
+#contact > div {padding: 0 0 90px /* 0 110px 90px */; box-sizing: border-box;}
+#contact > div > div {display: flex; justify-content: space-between;}
+
+#contact > div > div .info {width: 42.9657794%/* 455px + 110px -> #contact padding-left값 */;}
+#contact > div > div .info dt, #contact > div > div .info dd {color: #fff;}
+#contact > div > div .info dt {margin-bottom: 10px;}
+
+#contact > div > div .info .detail {padding-top: 10px;}
+#contact > div > div .info .detail dt, #contact > div > div .info .detail dd {padding-left: 42px; line-height: 1.625; font-size: 16px;}
+#contact > div > div .info .detail dt {margin: 30px 0 0;}
+/* 
+icon_contact01 ->
+<a href="https://www.flaticon.com/free-icons/address" title="address icons">Address icons created by adriansyah - Flaticon</a> 
+
+icon_contact02 ->
+<a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Gregor Cresnar - Flaticon</a>
+
+icon_contact03 ->
+<a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a>
+*/
+#contact > div > div .info .detail dl dt {background: url("../images/icon/icon_contact01.png") no-repeat top 2px left; background-size: 24px;}
+#contact > div > div .info .detail dl:nth-child(2) dt {background-image: url("../images/icon/icon_contact02.png");}
+#contact > div > div .info .detail dl:nth-child(3) dt {background-image: url("../images/icon/icon_contact03.png");}
+
+#contact > div > div .form {margin-right: 4.1825095%/* 55px */; width: 46.23574144%/* 448px + 50px + 110px -> #contact padding-right값 */; border-radius: 10px; background-color: #fff; box-sizing: border-box; padding: 16px 20px;}
+#contact > div > div .form li {margin-bottom: 10px;}
+#contact > div > div .form label {display: block; font-size: 14px; color: #717171; line-height: 2.71428; font-weight: bold;}
+#contact > div > div .form input, #contact > div > div .form textarea {width: 100%; box-sizing: border-box; padding: 0; background-color: #e3e3e3; line-height: 43px; padding-left: 10px; border: 0 none; border-radius: 5px;}
+#contact > div > div .form textarea {padding: 10px; height: 120px; line-height: 1.5;}
+#contact > div > div .form input[type=submit] {color: #717171; cursor: pointer; font-weight: bold;}
+
+/************
+  aside
+*************/
+#top {display: none; position: fixed; right: 20px; bottom: 20px; overflow: hidden; cursor: pointer; z-index: 100;}
+#top p {width: 32px; height: 32px; background-color: #e38545; position: relative; text-indent: -99999em;}
+#top p:before, #top p:after {content:""; display: block; position: absolute; height: 2px; width: 10px; border-radius: 5px; background-color: #fff; top: 50%;}
+#top p:before {transform: translateY(-50%) rotate(-45deg); left: 8px;}
+#top p:after {transform: translateY(-50%) rotate(45deg); left: 14px;}
+
+#submenu {display: none; position: fixed; right: 40px; top: 50%; transform: translateY(-50%); z-index: 100;}
+#submenu li {margin: 8px 0; position: relative;}
+#submenu li a {display: block; width: 18px; height: 18px; background-color: #e0e0e0; border-radius: 50%; text-indent: -99999em;}
+#submenu li a:after {content: "home"; display: block; position: absolute; padding: 0 5px; color: #e0e0e0; top: 50%; transform: translateY(-50%); right: 120%; opacity: 0; transition: all .2s; text-indent: 0;}
+#submenu li:nth-child(2) a:after {content:"About";}
+#submenu li:nth-child(3) a:after {content:"Skill";}
+#submenu li:nth-child(4) a:after {content:"Work";}
+#submenu li:nth-child(5) a:after {content:"Contact";}
+
+#submenu li:hover a:after {opacity: 1; }
+
+/************
+  footer
+*************/
+
+footer {background-color: #424242; text-align: center; padding: 40px 0;}
+footer small {color: #fff; font-size: 14px;}
