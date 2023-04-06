@@ -71,5 +71,6 @@ $(function(){
         let idx = $(this).index()
         $('#listWrap .all').css('display','none')
         $('#listWrap .all').eq(idx).css('display','flex')
+        $(this).addClass('act').siblings().removeClass('act')
       })
 })

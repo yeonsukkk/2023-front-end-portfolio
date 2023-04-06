@@ -80,6 +80,7 @@ main {background-color: #eee;}
 #work > div > ul li {padding: 0 20px; border-left: 2px solid #fff;}
 #work > div > ul li:first-child {border-left: 0 none;}
 #work > div > ul li a {font-size: 18px; color: #fff;}
+#work > div > ul li.act a{font-weight: bold; text-shadow: 3px 2px 3px rgba(0,0,0,0.2);}
 
 #work #listWrap .all {display: none; flex-wrap: wrap;}
 #work #listWrap .all:nth-child(1){display: flex;}
