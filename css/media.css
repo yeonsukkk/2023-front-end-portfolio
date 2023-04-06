@@ -79,10 +79,10 @@
     #skill {padding-bottom: 65px;}
     #skill figure {flex-direction: column-reverse;}
     #skill figure > div {width: 63.27vw; margin: 50px auto 0;}
-    #skill figure > div > div {width: 8.325vw; height: 8.325vw; margin: 1.11vw;}
-    #skill figure > div > div img {max-width: auto;}
-
-    #skill figcaption {width: 90.01vw; margin: 0 auto;}
+    #skill figure > div > div {margin-bottom: 3vw;}
+    #skill figure > div > div > div {width: 10vw; height: 10vw; margin: 1.11vw;}
+    #skill figure > div > div p {font-size: 2vw;}
+    #skill figure > div > div img {max-width: auto; width: 80%;}
 
     /* work */
     #work {padding-bottom: 65px;}
@@ -154,7 +154,7 @@
     /* skill */
     #skill {padding-bottom: 30px;}
     #skill figure > div {width: 86.68vw; margin: 20px auto 0;}
-    #skill figure > div > div {margin: 1.665vw; width: 14.006vw; height: 14.006vw;}
+    #skill figure > div > div > div {margin: 1.665vw; width: 14.006vw; height: 14.006vw;}
 
     /* work */
     #work > div > p span {margin-top: 30px;}
@@ -165,4 +165,10 @@
     #contact > div {padding-bottom: 35px;}
     #work > div > p span {margin-top: 30px;}
     #contact > div > div .info, #contact > div > div .form {width: 90.01vw;}
+}
+
+@media all and (max-width: 426px){
+    main > section h3{padding: 13vw 0 10vw;}
+    #work > div > ul {margin: 0 0 10vw;}
+    #work > div > ul li a {font-size: 4vw;}
 }

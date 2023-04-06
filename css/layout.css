@@ -61,14 +61,14 @@ main {background-color: #eee;}
 #about > div figure > div {width: 38.0228136%/* 390px + 110px -> #about > div padding left값 */;}
 #about > div figure > figcaption {width: 57.0342205% /*  640px + 110px */; overflow: hidden;}
 #about > div figure > figcaption dt {font-size: 26px; line-height:1.2; margin-bottom: 35px; color: #4b4b4b; text-transform: uppercase;}
-#about > div figure > figcaption dd p:last-child {width: 200px; text-align: right; line-height: 3.125; color: #fff; text-align: center; background-color: #afafaf; border-radius: 25px; float: right; margin-top: 50px;}
+#about > div figure > figcaption dd p:last-child {width: 200px; text-align: right; line-height: 3.125; color: #fff; text-align: center; background-color: #afafaf; border-radius: 25px; float: right; margin-top: 50px; overflow: hidden;}
+#about > div figure > figcaption dd p:last-child a {display: block; text-align: center; color: inherit;}
 
 /* skill */
 #skill {padding-bottom: 80px; background-color: #fff;}
-#skill figure {display: flex; justify-content: space-between; flex-direction: row-reverse; flex-wrap: wrap;}
-#skill figure > div {width: 43.80228136%/* 576px */; display: flex; justify-content: flex-start; flex-wrap: wrap;}
-#skill figure > div > div {width: 80px; height: 80px; margin: 8px; box-sizing: border-box; border: 1px solid #cac6c4; border-radius: 10px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
-#skill figcaption {width: 39.5437262%/* 520px */;}
+#skill figure > div {display: flex; justify-content: center; flex-wrap: wrap;}
+#skill figure > div > div > div {width: 80px; height: 80px; margin: 8px; box-sizing: border-box; border: 1px solid #cac6c4; border-radius: 10px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+#skill figure > div > div > p {text-align: center; font-size: 14px;}
 
 /* work */
 #work {background-color: #BDBDBD; padding-bottom: 30px;}
